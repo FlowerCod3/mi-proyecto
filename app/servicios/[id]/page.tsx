@@ -5,11 +5,12 @@ import Link from "next/link";
 import { useParams } from "next/navigation";
 
 type Servicio = {
-  id: number;
+  id: number | string;
   nombre: string;
   descripcion: string;
   detalle: string;
   precio: string;
+  duracion?: number;
 };
 
 export default function ServicioDetallePage() {
@@ -25,14 +26,11 @@ export default function ServicioDetallePage() {
         setCargando(false);
         return;
       }
-const datos = await respuesta.json();
 
-if (Array.isArray(datos)) {
-  setServicios(datos);
-} else {
-  console.error("La API no devolvió una lista:", datos);
-  setServicios([]);
-}
+      const datos = (await respuesta.json()) as Servicio;
+      setServicio(datos);
+      setCargando(false);
+    }
 
     cargarServicio();
   }, [params.id]);
