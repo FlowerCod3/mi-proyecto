@@ -16,6 +16,29 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.pagina-fondo {
+  background-color: #fff;
+  background-image: url("/rosas-fondo.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: 88% auto;
+  background-attachment: scroll;
+}
+
+@media (max-width: 759px) {
+  .pagina-fondo {
+    background-size: auto 96svh;
+  }
+
+  .hero-flores {
+    min-height: min(720px, 92vh);
+  }
+
+  .hero-flores__inner {
+    min-height: inherit;
+  }
+}
+
 .pagina {
   min-height: 100vh;
   padding: 70px 24px 30px;
