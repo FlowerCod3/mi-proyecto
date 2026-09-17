@@ -16,8 +16,8 @@ export default function Home() {
             />
           </h1>
           <div className="min-w-0 pb-3 text-center">
-            <p className="mb-5 text-[22px] font-medium uppercase leading-snug text-[#795d67] min-[760px]:text-[36px]">
-              Estética facial, manicure, bienestar
+            <p className="mb-5 text-[22px] font-medium uppercase text-[#795d67]">
+              Estética facial y manicure
             </p>
             <h2 className="m-0 text-[36px] font-light leading-[1.08] text-[#392533] min-[760px]:text-[48px] min-[1100px]:text-[62px] min-[1500px]:text-[78px]">
               Belleza<br />serena, piel<br />luminosa
