@@ -23,6 +23,14 @@ export default function Home() {
               Belleza<br />serena, piel<br />luminosa
             </h2>
           </div>
+          <a
+            href="#servicios"
+            aria-label="Ver nuestros servicios"
+            title="Ver nuestros servicios"
+            className="flex h-14 w-14 items-center justify-center rounded-full border border-[#5c1645] bg-white/95 text-[#5c1645] shadow-[0_6px_18px_rgba(92,22,69,0.18)] transition hover:-translate-y-1 hover:bg-white focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#5c1645] min-[760px]:col-span-2"
+          >
+            <span aria-hidden="true" className="text-[30px] leading-none">↓</span>
+          </a>
         </div>
       </section>
 
