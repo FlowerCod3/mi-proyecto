@@ -2,37 +2,34 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="pagina-fondo min-h-screen text-[#30202c]">
-      <section className="hero-flores px-8 max-[750px]:px-4">
-        <div className="hero-flores__inner mx-auto grid w-full max-w-[1440px] items-center justify-items-center gap-x-12 gap-y-3 py-12 min-[760px]:min-h-[calc(100svh-80px)] min-[760px]:grid-cols-[minmax(0,1.15fr)_minmax(0,0.85fr)] max-[759px]:py-10">
-          <h1 className="m-0 w-full max-w-[880px]">
-            <Image
-              src="/amor-logo.png"
-              alt="Amor"
-              width={1774}
-              height={887}
-              priority
-              className="block h-auto w-full"
-            />
-          </h1>
-          <div className="min-w-0 pb-3 text-center">
-            <p className="mb-5 text-[22px] font-medium uppercase text-[#795d67]">
-              Estética facial y manicure
-            </p>
-            <h2 className="m-0 text-[36px] font-light leading-[1.08] text-[#392533] min-[760px]:text-[48px] min-[1100px]:text-[62px] min-[1500px]:text-[78px]">
-              Belleza<br />serena, piel<br />luminosa
-            </h2>
-          </div>
-          <a
-            href="#servicios"
-            aria-label="Ver nuestros servicios"
-            title="Ver nuestros servicios"
-            className="flex h-14 w-14 items-center justify-center rounded-full border border-[#5c1645] bg-white/95 text-[#5c1645] shadow-[0_6px_18px_rgba(92,22,69,0.18)] transition hover:-translate-y-1 hover:bg-white focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#5c1645] min-[760px]:col-span-2"
-          >
-            <span aria-hidden="true" className="text-[30px] leading-none">↓</span>
-          </a>
-        </div>
-      </section>
+    <main className="pagina-fondo min-h-screen w-full text-[#30202c]">
+<section className="hero-flores px-8 min-[760px]:px-4">
+  <div className="mx-auto flex min-h-screen w-full max-w-[1280px] flex-col items-center justify-center py-10 text-center">
+    <h1 className="hero-logo-wrap m-0 mb-8 min-w-0 w-full max-w-[1140px] bg-transparent">
+      <Image
+        src="/amor-icon-transparent.png"
+        alt="Amor, estética facial y manicure"
+        width={2111}
+        height={745}
+        priority
+        sizes="(max-width: 759px) calc(100vw - 64px), 1140px"
+        className="hero-logo mx-auto block h-auto w-full max-w-full bg-transparent object-contain"
+      />
+    </h1>
+
+
+    <a
+      href="#servicios"
+      aria-label="Ver nuestros servicios"
+      title="Ver nuestros servicios"
+      className="mt-5 flex h-14 w-14 items-center justify-center rounded-full border border-[#701044] bg-[#701044] text-white shadow-[0_6px_18px_rgba(92,22,69,0.28)] transition hover:-translate-y-1 hover:bg-[#570c35] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#701044]"
+    >
+      <span aria-hidden="true" className="text-[30px] leading-none">
+        ↓
+      </span>
+    </a>
+  </div>
+</section>
 
       <section id="servicios" className="bg-white/80 px-6 py-16 max-[750px]:px-4">
         <div className="mx-auto w-full max-w-[1020px]">
@@ -89,6 +86,40 @@ export default function Home() {
                 El servicio indicado depende de la salud de tus uñas y del resultado que deseas.
               </p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="promos" className="bg-white/80 px-6 py-16 max-[750px]:px-4">
+        <div className="mx-auto w-full max-w-[1020px]">
+          <div className="border-t border-[#d9c2b2] pt-12 text-center">
+            <h2 className="m-0 text-[38px] font-light leading-tight text-[#3a2434] min-[760px]:text-[52px]">
+              Promos
+            </h2>
+            <p className="mx-auto mb-0 mt-6 max-w-[620px] text-[18px] leading-relaxed text-[#685c60]">
+              Muy pronto vas a encontrar acá promociones especiales para cuidar tu piel y tus uñas.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="turnos" className="bg-white/80 px-6 py-16 max-[750px]:px-4">
+        <div className="mx-auto w-full max-w-[1020px]">
+          <div className="border-t border-[#d9c2b2] pt-12 text-center">
+            <h2 className="m-0 text-[38px] font-light leading-tight text-[#3a2434] min-[760px]:text-[52px]">
+              Pedí tu turno
+            </h2>
+            <p className="mx-auto mb-8 mt-6 max-w-[620px] text-[18px] leading-relaxed text-[#685c60]">
+              Escribinos por WhatsApp para consultar disponibilidad y reservar tu próximo turno.
+            </p>
+            <a
+              href="https://wa.me/5492646721492?text=Hola%2C%20quisiera%20pedir%20un%20turno."
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex min-h-12 items-center justify-center bg-[#5c1645] px-7 py-3 text-[17px] font-medium text-white transition hover:bg-[#471036] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#5c1645]"
+            >
+              Pedir turno por WhatsApp
+            </a>
           </div>
         </div>
       </section>

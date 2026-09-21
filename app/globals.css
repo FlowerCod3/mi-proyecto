@@ -8,6 +8,7 @@ html,
 body {
   margin: 0;
   min-height: 100%;
+  width: 100%;
 }
 
 body {
@@ -17,17 +18,28 @@ body {
 }
 
 .pagina-fondo {
+  width: 100%;
   background-color: #fff;
-  background-image: url("/rosas-fondo.jpg");
-  background-position: center top;
+  background-image: url("/power-of-dreams.jpg");
+  background-position: center center;
   background-repeat: no-repeat;
-  background-size: 88% auto;
+  background-size: cover;
   background-attachment: scroll;
 }
 
+.hero-logo {
+  background: transparent;
+}
+
 @media (max-width: 759px) {
+  .hero-logo-wrap {
+    width: 82%;
+  }
+
   .pagina-fondo {
-    background-size: auto 96svh;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: scroll;
   }
 
   .hero-flores {
