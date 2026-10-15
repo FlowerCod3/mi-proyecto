@@ -3,13 +3,13 @@ import { readFile } from "node:fs/promises";
 import { join } from "node:path";
 import { ImageResponse } from "next/og";
 
-export const alt = "Amor, estética facial y manicure";
+export const alt = "Amor, manos y rostro";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
 const [backgroundData, logoData] = await Promise.all([
   readFile(join(process.cwd(), "public", "power-of-dreams.jpg"), "base64"),
-  readFile(join(process.cwd(), "public", "amor-logo-clean.png"), "base64"),
+  readFile(join(process.cwd(), "public", "amor-logo-manos-y-rostro.png"), "base64"),
 ]);
 
 const backgroundSrc = `data:image/jpeg;base64,${backgroundData}`;
